@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-rest-swagger = "*"
+django-cors-headers = "*"
+requests = "*"
+djangorestframework-jwt = "*"
+django-heroku = "*"
+pillow = "*"
+gunicorn = "*"
+"psycopg2-binary" = "*"
+
+[dev-packages]
+rope = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.6"
