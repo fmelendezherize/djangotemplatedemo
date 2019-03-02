@@ -1,0 +1,8 @@
+venv
+*.pyc
+staticfiles
+static
+.env
+.vscode
+media
+.sonarlint

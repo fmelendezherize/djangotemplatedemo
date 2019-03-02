@@ -159,10 +159,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Copy al this block and change as needed 
 
 #Rest Framework
-# if DEBUG:
-#     rest_framework_permission = 'rest_framework.permissions.AllowAny'
-# else:
-rest_framework_permission = 'rest_framework.permissions.IsAuthenticated'
+# Deactivate Security
+rest_framework_permission = 'rest_framework.permissions.AllowAny'
+# Activate Security
+#rest_framework_permission = 'rest_framework.permissions.IsAuthenticated'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (

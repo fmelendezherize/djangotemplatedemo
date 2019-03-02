@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+from django.conf.urls.static import static
+from django.conf import settings
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='App Name')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls), #home for admin panel else some django home template
+    path('api/', schema_view), #api for swagger docs
 ]
