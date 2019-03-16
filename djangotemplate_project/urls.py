@@ -25,4 +25,5 @@ schema_view = get_swagger_view(title='App Name')
 urlpatterns = [
     path('', admin.site.urls), #home for admin panel else some django home template
     path('api/', schema_view), #api for swagger docs
+    path('api/auth/', include('authentication.urls')),
 ]

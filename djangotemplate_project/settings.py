@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 	'rest_framework', #<----- copy
     'rest_framework_swagger', #<----- copy
     'corsheaders', #<----- copy
+    'authentication', #<----- copy
 ]
 
 MIDDLEWARE = [
@@ -128,7 +129,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-#AUTH_USER_MODEL = 'authentication.Profile'  #<----- copy this if custom authentication
+AUTH_USER_MODEL = 'authentication.Profile'  #<----- copy this if custom authentication
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/

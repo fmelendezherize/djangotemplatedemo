@@ -1,0 +1,21 @@
+Django Project Template CheatSheet
+
+Se asume que esta instalado python3, pip, pipenv en el equipo del desarrollador
+
+1)  crear proyecto en github / bitbucket, ejem: djangotemplatedemo
+2)  run >mkdir djangotemplatedemo
+3)  run >cd djangotemplatedemo
+4)  run >pipenv shell (tarda en finalizar)
+5)  sobreescribir el archivo Pipfile, con nuestro archivo ubicado en https://github.com/fmelendezherize/djangotemplatedemo
+6)  run >pipenv install (tarda y bastante)
+7)  run >django-admin startproject djangotemplatedemo_project .   (<-- pendiente ese punto ahi va)
+8)  copiar carpeta authentication y pegar en raiz de la carpeta del proyecto 
+9)  abrir settings.py del nuevo proyecto y sustituir bloques del settings.py ubicado en https://github.com/fmelendezherize/djangotemplatedemo
+10) run >python manage.py makemigrations
+11) run >python manage.py migrate
+12) run >python manage.py createsuperuser
+13) run >git init
+14) run >git add . (<-- pendiente ese punto ahi va)
+15) run >git commit -m "first commit"
+16) run >git remote add origin https://github.com/usuario/djangotemplatedemo.git (cambiar git link con el apropiado)
+17) run >git push -u origin master
