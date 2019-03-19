@@ -14,6 +14,8 @@ django-heroku = "*"
 pillow = "*"
 gunicorn = "*"
 "psycopg2-binary" = "*"
+pylint = "*"
+rope = "*"
 
 [dev-packages]
 rope = "*"
