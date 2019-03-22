@@ -26,7 +26,7 @@ SECRET_KEY = 'lgs3dilpn4nbxqq*i28g60#b2@%ew)xvmj7bz^+dhl_f&q0i(u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [] #<------- sustitute this :
+ALLOWED_HOSTS = [] #<------- sustitute this to include production server ip :
 ''' with this block
 if DEBUG: 
     ALLOWED_HOSTS = []
@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'djangotemplate_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {  #<------- sustitute this block 
+DATABASES = {  #<------- sustitute this block for developing or production database
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
@@ -148,7 +148,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/' #<------- sustitute this
+STATIC_URL = '/static/' #<------- sustitute this for static and media directories
 ''' with this block 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -160,7 +160,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Copy al this block and change as needed 
 
 #Rest Framework
-# Deactivate Security
+# Deactivate Security #<----- copy this block for activate or deactivate security check
 rest_framework_permission = 'rest_framework.permissions.AllowAny'
 # Activate Security
 #rest_framework_permission = 'rest_framework.permissions.IsAuthenticated'
@@ -223,5 +223,5 @@ EMAIL_HOST_PASSWORD = '1234567'
 EMAIL_USE_TLS = False
 EMAIL_SENDER_MAIL = 'user@customerserverhost.com'
 
-#import django_heroku  <--------------- if heroku
+#import django_heroku  #<------------ settings for hosting with heroku
 #django_heroku.settings(locals())
