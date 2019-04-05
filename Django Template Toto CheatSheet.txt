@@ -6,7 +6,7 @@ Se asume que esta instalado python3, pip, pipenv en el equipo del desarrollador
 2)  run >mkdir djangotemplatedemo
 3)  run >cd djangotemplatedemo
 4)  run >pipenv shell (tarda en finalizar)
-5)  sobreescribir el archivo Pipfile, con nuestro archivo ubicado en https://github.com/fmelendezherize/djangotemplatedemo
+5)  sobreescribir el archivo Pipfile, .gitignore, con nuestros archivos ubicado en https://github.com/fmelendezherize/djangotemplatedemo
 6)  run >pipenv install (tarda y bastante)
 7)  run >django-admin startproject djangotemplatedemo_project .   (<-- pendiente ese punto ahi va)
 8)  copiar carpeta authentication y pegar en raiz de la carpeta del proyecto 
